@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Platform</title>
+    <link rel="stylesheet" href="music.css">
+    <script defer src="music.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Music Streaming Platform</h1>
+        <nav class="nav">
+            <button id="loginBtn">Login</button>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="music-library">
+            <h2>Explore Music</h2>
+            <div id="songs-container" class="songs-container">
+                <!-- Songs will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="playlist">
+            <h2>Your Playlist</h2>
+            <ul id="playlist">
+                <!-- User playlist will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button id="submitLogin">Login</button>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>
